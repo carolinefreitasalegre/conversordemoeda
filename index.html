@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon-16x16.png" type="image/x-icon">
+    <title>Force Monedas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <main >
+        <header>
+            <label class="switch">
+                <input onclick="checkbox()" id="checkbox" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div>
+                <h2>Force Monedas</h2>
+                <button onclick="conversor()">CONVERSOR</button>
+            </div>
+        </header>
+        <span id="linha"></span>
+        <section class="section One">
+            <div class="container">
+            
+                <div>
+                    <h1>Seu conversor de moedas</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. 
+                    </p>
+                </div>
+                <img src="imagem/bitcoin.svg" alt="img">
+        </div>
+        </section>
+        <footer>by: Lorem Ipsum has been the industry's </footer>
+
+
+
+
+        <div id="modal">
+            <div class="modal-all">
+                <img onclick="closeAll()" src="imagem/x-circle.svg" alt="close">
+                <form action="">
+                    <label for="moedas" id="title-form">Escolha a moeda</label>
+                    <select required id="moedas" name="moedas">
+
+                      <option value="" aria-checked="true">Moedas</option>
+                      <option value="USD-BRL">USD-BRL</option>
+                      <option value="EUR-BRL">EUR-BRL</option>
+                      <option value="BTC-BRL">BTC-BRL</option>
+                     
+                    </select>
+                    <input id="valorInput" type="number" onfocus="this.value='';"  required  placeholder="Valor desejado">
+
+
+                    <button onclick="buscarValor()" id="submit">Enviar</button>
+
+                    <textarea style="resize: none" disabled="" name="textarea" id="textarea" placeholder="Valor convertido" cols="30" rows="10"></textarea>
+                  </form>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+</body>
+</html>
