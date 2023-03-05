@@ -45,18 +45,18 @@ function getData(dados) {
     const valorInput = document.getElementById('valorInput').value;
 
     if (moedas.value === ('USD-BRL')) {
-        textarea.innerText= `Valor do Dólar: R$${parseFloat(dados.USDBRL.ask).toFixed(2)} 
-                            Valor desejado: R$${(parseFloat(dados.USDBRL.ask)*parseFloat(valorInput)).toFixed(2)}.`
+        textarea.innerText= `Valor do Dólar: $${parseFloat(dados.USDBRL.ask).toFixed(2)} 
+                            Valor em Real: R$${(parseFloat(dados.USDBRL.ask)*parseFloat(valorInput)).toFixed(2)}.`
         
     }
     else if (moedas.value === ('EUR-BRL')) {
-        textarea.innerText= `Valor do Dólar: R$${parseFloat(dados.EURBRL.ask).toFixed(2)} 
-                            Valor desejado: R$${(parseFloat(dados.EURBRL.ask) * parseFloat(valorInput)).toFixed(2)}.`
+        textarea.innerText= `Valor do Euro: € ${parseFloat(dados.EURBRL.ask).toFixed(2)} 
+                            Valor em Real: R$${(parseFloat(dados.EURBRL.ask) * parseFloat(valorInput)).toFixed(2)}.`
         
     }
     else if (moedas.value === ('BTC-BRL')) {
-        textarea.innerText= `Valor do Dólar: R$${parseFloat(dados.BTCBRL.ask).toFixed(2)} 
-                            Valor desejado: R$${(parseFloat(dados.BTCBRL.ask)*parseFloat(valorInput)).toFixed(2)}.`
+        textarea.innerText= `Valor do Bitcoin: ₿ ${parseFloat(dados.BTCBRL.ask).toFixed(2)} 
+                            Valor em Real: R$${(parseFloat(dados.BTCBRL.ask)*parseFloat(valorInput)).toFixed(2)}.`
 
 
     } else {
