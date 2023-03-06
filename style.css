@@ -195,7 +195,7 @@ footer{
     transition: 0.5s;
     position: absolute;
     background-color: var(--first-color);
-    height: 50vh;
+    min-height: 60vh;
     width: 20%;
     border-radius: 5px;
     margin: 0 auto;
