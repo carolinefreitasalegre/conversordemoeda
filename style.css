@@ -206,6 +206,7 @@ footer{
     -webkit-box-shadow: -10px 7px 155px -4px rgba(0,0,0,0.72);
 -moz-box-shadow: -10px 7px 155px -4px rgba(0,0,0,0.72);
 box-shadow: -10px 7px 155px -4px rgba(0,0,0,0.72);
+    margin-top: -10%;
    margin-bottom: 10%;
 }
 .modal-all img{
