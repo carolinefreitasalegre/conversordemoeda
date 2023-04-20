@@ -1,0 +1,57 @@
+@media(max-width:1293px){
+    html{
+        font-size: 70%;
+    }
+    header{
+        height: 15vh;
+    }
+    header div{
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    button{
+        position: fixed;
+        right: 5%;
+    }
+    .One{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        order: -2;
+        margin-top: 5%;
+        width: 50%;
+    }
+    h1{
+        margin: 5%;
+    }
+    p{
+        width: 80%;
+        margin-left: 10%;
+        padding: 10px;
+    }
+    .modal{
+        width: 100%;
+        background-color: red;
+    }
+    .modal-all{
+        background-color: red;
+        width: 100vw;
+    }
+    form{
+        width: 100%;
+    }
+}
