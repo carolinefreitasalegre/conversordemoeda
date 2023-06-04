@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagem/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="media.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="imagem/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="media.css" />
 
     <title>Force Monedas</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-</head>
-<body>
-    <main >
-        <header>
-            <label class="switch">
-                <input onclick="checkbox()" id="checkbox" type="checkbox">
-                <span class="slider"></span>
-            </label>
-            <div>
-                <h2>Force Monedas</h2>
-                <button onclick="conversor()">CONVERSOR</button>
-            </div>
-        </header>
-        <span id="linha"></span>
-        <section class="section One">
-            <div class="container">
-            
-                <div>
-                    <h1>Seu conversor de moedas</h1>
-                    <p>
-<<<<<<< Updated upstream
-                       Bem-vindo ao nosso conversor de moedas! Aqui você pode converter facilmente qualquer moeda para outra. Basta selecionar as moedas que deseja converter, inserir o valor e pressionar o botão de conversão. Nós utilizamos as taxas de câmbio mais atualizadas para garantir que as suas conversões sejam precisas. Experimente agora e faça suas conversões de moedas de forma rápida e simples! 
-=======
-                        Bem-vindo ao nosso conversor de moedas! Aqui você pode converter facilmente qualquer moeda para outra. Basta selecionar as moedas que deseja converter, inserir o valor e pressionar o botão de conversão. Nós utilizamos as taxas de câmbio mais atualizadas para garantir que as suas conversões sejam precisas. Experimente agora e faça suas conversões de moedas de forma rápida e simples!
->>>>>>> Stashed changes
-                    </p>
-                </div>
-                <img src="imagem/bitcoin.svg" alt="img">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>Force Monedas</h2>
+        <button onclick="conversor()">CONVERSOR</button>
+      </header>
+      <section class="section One">
+        <div class="container">
+          <h1>Seu conversor de moedas</h1>
+          <p>
+            Bem-vindo ao nosso conversor de moedas! Aqui você pode converter
+            facilmente qualquer moeda para outra. Basta selecionar as moedas que
+            deseja converter, inserir o valor e pressionar o botão de conversão.
+            Nós utilizamos as taxas de câmbio mais atualizadas para garantir que
+            as suas conversões sejam precisas. Experimente agora e faça suas
+            conversões de moedas de forma rápida e simples!
+          </p>
         </div>
-        </section>
-        <footer>by: Force Monedas dotCom </footer>
+        <img src="imagem/bitcoin.svg" alt="img" id="img" />
+      </section>
+      <footer>by: Force Monedas dotCom</footer>
 
+      <div id="modal">
+        <div class="modal-all slide-bottom">
+          <img
+            id="btnClose"
+            onclick="closeAll()"
+            src="imagem/x-circle.svg"
+            alt="close"
+          />
+          <form>
+            <label for="moedas" id="title-form">Escolha a moeda</label>
+            <select required id="moedas" name="moedas">
+              <option value="" aria-checked="true">Moedas</option>
+              <option value="USD-BRL">USD-BRL</option>
+              <option value="EUR-BRL">EUR-BRL</option>
+              <option value="BTC-BRL">BTC-BRL</option>
+            </select>
+            <input
+              id="valorInput"
+              type="number"
+              onfocus="this.value='';"
+              required
+              placeholder="Valor desejado"
+            />
 
+            <button onclick="buscarValor()" id="submit">Enviar</button>
 
-
-        <div id="modal">
-            <div class="modal-all">
-                <img onclick="closeAll()" src="imagem/x-circle.svg" alt="close">
-                <form action="">
-                    <label for="moedas" id="title-form">Escolha a moeda</label>
-                    <select required id="moedas" name="moedas">
-
-                      <option value="" aria-checked="true">Moedas</option>
-                      <option value="USD-BRL">USD-BRL</option>
-                      <option value="EUR-BRL">EUR-BRL</option>
-                      <option value="BTC-BRL">BTC-BRL</option>
-                     
-                    </select>
-                    <input id="valorInput" type="number" onfocus="this.value='';"  required  placeholder="Valor desejado">
-
-
-                    <button onclick="buscarValor()" id="submit">Enviar</button>
-
-                    <textarea style="resize: none" disabled="" name="textarea" id="textarea" placeholder="Valor convertido" cols="30" rows="5"></textarea>
-                  </form>
-            </div>
+            <textarea
+              style="resize: none"
+              disabled=""
+              name="textarea"
+              id="textarea"
+              placeholder="Valor convertido"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </form>
         </div>
-
+      </div>
     </main>
-
-
-
-
-
-</body>
+  </body>
 </html>
