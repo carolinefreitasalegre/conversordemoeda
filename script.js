@@ -56,3 +56,7 @@ function getData(dados) {
     alert("Seleciona uma moeda!");
   }
 }
+
+function clear() {
+  document.getElementById("campoPesquisa").value = "";
+}
