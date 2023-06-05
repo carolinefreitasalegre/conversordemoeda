@@ -1,11 +1,3 @@
-function conversor() {
-  document.getElementById("modal").style.display = "block";
-}
-
-function closeAll() {
-  document.getElementById("modal").style.display = "none";
-}
-
 /* INICIO DA API */
 
 function buscarValor() {
@@ -59,4 +51,14 @@ function getData(dados) {
 
 function clear() {
   document.getElementById("campoPesquisa").value = "";
+}
+
+function conversor() {
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeAll() {
+  document.getElementById("modal").style.display = "none";
+
+  clear();
 }
