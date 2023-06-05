@@ -56,3 +56,16 @@ function getData(dados) {
     alert("Seleciona uma moeda!");
   }
 }
+
+
+/*tentativa de fechar modal clicando fora*/
+
+const modal = document.getElementById('modal')
+
+
+function fecharModal(){
+  alert('hello')
+}
+
+
+modal.addEventListener("click", fecharModal)
